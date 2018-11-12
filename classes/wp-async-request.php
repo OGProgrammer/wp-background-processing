@@ -127,8 +127,8 @@ if ( ! class_exists( 'WP_Async_Request' ) ) {
 			}
 
 			return array(
-				'timeout'   => 0.01,
-				'blocking'  => false,
+				'timeout'   => 2,
+				//'blocking'  => false,
 				'body'      => $this->data,
 				'cookies'   => $_COOKIE,
 				'sslverify' => apply_filters( 'https_local_ssl_verify', false ),
